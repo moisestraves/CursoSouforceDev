@@ -1,0 +1,5 @@
+<apex:page >
+    <label>Imagem</label>
+    
+    <apex:image url="https://developer.salesforce.com/files/salesforce-developer-network-logo.png"/>
+</apex:page>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <description>Eu sou um exemplo de Toast</description>
+    <masterLabel>Toast Samples</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__Tab</target>
+        <target>lightning__UtilityBar</target>
+        <target>lightning__AppPage</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__HomePage,lightning__UtilityBar">
+        <property label="Mode" name="mode" default="dismissable" type="String" datasource="dismissable,pester,sticky"/>
+        <property label="buttonLabel" name="buttonLabel" default="Me clique" type="String"/>
+       </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

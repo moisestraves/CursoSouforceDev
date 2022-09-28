@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="TicketsController">
+    <aura:attribute name="voos" type="Object" default="[]" />
+    <aura:handler name="init" value="this" action="{!c.init}" />
+    <aura:iteration items="{!v.voos}" var="voo">
+
+        <c:cardTicket></c:cardTicket>
+
+    </aura:iteration>
+
+</aura:component>

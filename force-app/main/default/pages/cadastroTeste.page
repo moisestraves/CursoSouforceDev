@@ -1,0 +1,34 @@
+<apex:page standardController="lead" >
+    <apex:pageBlock title="Formulário de Cadastro de Clientes">
+        <apex:form >
+            
+            <apex:pageBlockSection columns="2">
+              
+                <apex:inputField value="{! Lead.FirstName}" />
+                <apex:inputField value="{! Lead.LastName}" />
+                <apex:inputField value="{! Lead.email}"/>
+                <apex:inputField value="{! Lead.Phone}"/>
+                <apex:inputField value="{! Lead.City}"/>
+                <apex:inputField value="{! Lead.State}"/>
+                <apex:commandButton action="{! save }" value="Enviar" />
+            </apex:pageBlockSection>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </apex:form>
+        
+    </apex:pageBlock>
+</apex:page>

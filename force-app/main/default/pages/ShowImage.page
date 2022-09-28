@@ -1,0 +1,13 @@
+<apex:page >
+    <div>
+       <apex:image alt="kitten1" title="kitten1" url="{!URLFOR($Resource.vfimagetest, 'cats/kitten1.jpg')}"/>
+        <p>
+            Foto da gatinha Kitten
+        </p>
+    </div>
+    
+    <!--<apex:image 
+                url="{!URLFOR($Resource.jQueryMobile, 'jquery/images/icons-png/heart-black.png')}"/>-->
+    
+    <!-- URLFOR($Resource.jQueryMobile,'jquery/jquery.mobile-1.4.5.css')}"/>-->
+</apex:page>

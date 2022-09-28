@@ -1,0 +1,23 @@
+<apex:page standardController="Lead">
+    
+    <apex:pageBlock >
+        
+        <apex:form >
+           <apex:pageBlockSection columns="1" rendered="true">
+          <apex:inputField value="{! lead.FirstName}" /> 
+            <apex:inputField value="{! lead.LastName}" /> 
+               <apex:inputField value="{!lead.Company}"/>
+               <apex:inputField value="{!lead.CurrentGenerators__c}"/>
+               <apex:commandButton action="{!save}" value="Incluir" />
+              
+               
+            
+            </apex:pageBlockSection>
+       		
+       
+        
+        </apex:form>
+    
+    </apex:pageBlock>
+	
+</apex:page>

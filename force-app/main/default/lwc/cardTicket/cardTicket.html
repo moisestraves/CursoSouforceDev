@@ -1,0 +1,49 @@
+<template>
+    <lightning:card>
+        <div class="slds-grid slds-grid_align-space">
+            <div class="slds-col slds-m-top_large">
+                <p>{!v.companhiaOrigem}</p>
+                <p>{!v.companhiaDestino}</p>
+            </div>
+            <div class="slds-col">
+                <!--Voo Origem-->
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <p><strong>{!v.horaSaidaOrigem}</strong></p>
+                        <p>{!v.siglaAeroportoOrigemVooIda}</p>
+                    </div>
+                    <div class="slds-col">
+                        <div class="seta">
+
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <p><strong>{!v.horaChegDestino}</strong></p>
+                        <p>{!v.siglaAeroportoDestinoVooIda}</p>
+                    </div>
+                </div>
+                <!--Voo Destino-->
+                <div class="slds-grid slds-gutters slds-m-top_medium">
+                    <div class="slds-col">
+                        <p><strong>{!v.horaSaidaDestino}</strong></p>
+                        <p>{!v.siglaAeroportoVooVolta}</p>
+                    </div>
+                    <div class="slds-col">
+                        <div class="seta">
+                        </div>
+                    </div>
+                    <div class="slds-col">
+                        <p><strong>{!v.horChegadaOrigem}</strong></p>
+                        <p>{!v.siglaAeroportoOrigemVooVolta}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-m-top_large">
+                <p><strong>
+                        <lightning:formattedNumber value="{!v.valor}" style="currency" currencyCode="{!v.moeda}"
+                            currencyDisplayAs="code" /></strong></p>
+                <lightning:button variant="brand" label="Reservar" title="Reservar" onclick="{!c.reservaHandleClick}" />
+            </div>
+        </div>
+    </lightning:card>
+</template>
